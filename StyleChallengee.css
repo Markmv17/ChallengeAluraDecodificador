@@ -1,0 +1,231 @@
+body {
+    background:  #ced4bf ;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Cabeza {
+    padding: 0 0 40px;
+}
+
+.LogoChallenge {
+    padding: 28px 0 0 86px;
+}
+
+.tituloAnimado{
+    position: absolute;
+    left: 14%;
+    top: 7.5%;
+}
+
+.contenedor{
+    display: flex;
+    width: 800px;
+    height: 40px;
+    color: #000000;
+    font-size: 37px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.contenedor ul{
+    list-style: none;
+    padding-left: 10px;
+    animation: cambiar 4s infinite;
+}
+
+.contenedor ul,p{
+    margin: 0;
+}
+
+@keyframes cambiar {
+    0%{margin-top: 0;}
+    25%{margin-top: 0;}
+
+    40%{margin-top: -40px;}
+    65%{margin-top: -40px;}
+
+    80%{margin-top: 0;}
+    100%{margin-top: 0;}
+
+}
+
+main {
+    display: flex;
+}
+
+#decodificador {
+    float: left;
+    width: 50%;
+    padding: 0 0 0 240px;
+}
+
+#decodificador .textarea1 {
+    width: 80%;
+    height: 260%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+}
+
+.textarea1::placeholder {
+    font-family:'Times New Roman', Times, serif;
+}
+
+#buttonLimbiar{
+    width: 2%;
+    padding: 0.5%;
+    position: absolute;
+    top: 24.5%;
+    left: 14%;
+    background: #a0a595;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#buttonPegar{
+    width: 2%;
+    padding: 0.5%;
+    position: absolute;
+    top: 33%;
+    left: 14%;
+    background:#a0a595  ;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.advertencia {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: rgb(128, 128, 128);
+}
+
+.botones {
+    display: flex;
+    margin-top: 10px;
+    width: 60%;
+}
+
+.encriptar {
+    padding: 3.5% 25%;
+    background-color: #837367;
+    color: #ffffff;
+    border-color: black;
+    border-radius: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.desencriptar {
+    padding: 3.5% 21%;
+    margin-left: 27px;
+    background-color: #E9ECF8;
+    color: #000000;
+    border-color: black;
+    box-shadow: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.encriptar:hover {
+    transform: scale(1.15);
+    background-color: #462507;
+}
+
+.desencriptar:hover {
+    transform: scale(1.15);
+    background-color: #ffffff;
+}
+
+
+#resultado {
+    width: 23%;
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    bottom: 5%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#resultado img {
+    max-width: 85%;
+    max-height: 70%;
+    margin-top: 20%;
+}
+
+#resultado h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#resultado p {
+    margin-left: 28px;
+    width: 80%;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#resultado h3 {
+    margin-top: 15px;
+}
+
+#copyButton {
+    position: absolute;
+    left: 13%;
+    bottom: 28px;
+    padding: 4% 31%;
+    background-color:  #7a5d4b;;
+    color: #ffffff;
+    border-color: black;
+    box-shadow: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+#copyButton:hover {
+    transform: scale(1.15);
+    background-color:  #462507;
+    color: #ffffff;
+}
+
+footer{
+    background-color: #837367 ;
+    position: absolute;
+    width: 100%;
+    bottom: -40%;
+}
+
+.iconosFooter{
+    text-align: center;
+}
+
+.icongithub,.iconinsta,.iconlinkedin{
+    margin: 4% 10px 0;
+    cursor: pointer;
+}
+
+.separador{
+    margin-left: 43%;
+}
+.copy{
+    font-size: 13px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 0 3%;
+}
+
+
+  
