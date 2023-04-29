@@ -1,70 +1,70 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Codificador</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="StyleChallengee.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Codificador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="StyleChallengee.css">
+    </head>
 
-<body>
-    <header class="Cabeza">
-        <div>
-            <img class="LogoChallenge" src="ImagenesdeChallenge/LogoChallenge.png" alt="Logo de página">
-        </div>
-        <div class="tituloAnimado">
-            <div class="contenedor">
-                <p>Bienbenido(a) al</p>
-                <ul>
-                    <li>Encriptador</li>
-                    <li>Desencriptador</li>
-                </ul>
+    <body>
+        <header class="Cabeza">
+            <div>
+                <img class="LogoChallenge" src="ImagenesdeChallenge/LogoChallenge.png" alt="Logo de página">
             </div>
-        </div>
-    </header>
+            <div class="tituloAnimado">
+                <div class="contenedor">
+                    <p>Bienbenido(a) al</p>
+                    <ul>
+                        <li>Encriptador</li>
+                        <li>Desencriptador</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
 
-    <main>
-        <div id="decodificador">
-            <textarea class="textarea1" placeholder="Ingrese el texto aquí " name="texto" minlength="1"
-                autofocus=""></textarea>
-            <img src="ImagenesdeChallenge/limpiar.png" alt="botondelimpiar" id="buttonLimbiar">
-            <img src="ImagenesdeChallenge/pegar.png" alt="botondePegar" id="buttonPegar">
-            <span class="advertencia"> &#9888 Solo letras minusculas y sin acentos</span>
-            <div class="botones">
-                <button class="encriptar">Encriptar</button>
-                <button class="desencriptar">Desencriptar</button>
+        <main>
+            <div id="decodificador">
+                <textarea class="textarea1" placeholder="Ingrese el texto aquí " name="texto" minlength="1"
+                    autofocus=""></textarea>
+                <img src="ImagenesdeChallenge/limpiar.png" alt="botondelimpiar" id="buttonLimbiar">
+                <img src="ImagenesdeChallenge/pegar.png" alt="botondePegar" id="buttonPegar">
+                <span class="advertencia"> &#9888 Solo letras minusculas y sin acentos</span>
+                <div class="botones">
+                    <button class="encriptar">Encriptar</button>
+                    <button class="desencriptar">Desencriptar</button>
+                </div>
             </div>
-        </div>
-        <div id="resultado">
-            <div class="imagen-texto texto-oculto" id="seccion-resultado">
-                <img src="ImagenesdeChallenge/seguridadPhotoo.png" alt="Imagen" id="imagen-resultado">
-                <h2 class="texto">Ningún mensaje fue encontrado</h2>
-                <h3>Ingresa el texto que desees encriptar o desencriptar.</h3>
-                <p></p>
+            <div id="resultado">
+                <div class="imagen-texto texto-oculto" id="seccion-resultado">
+                    <img src="ImagenesdeChallenge/seguridadPhotoo.png" alt="Imagen" id="imagen-resultado">
+                    <h2 class="texto">Ningún mensaje fue encontrado</h2>
+                    <h3>Ingresa el texto que desees encriptar o desencriptar.</h3>
+                    <p></p>
+                </div>
             </div>
-        </div>
-        <div id="resultado2" style="display: none;">
-            <div class="imagen-texto texto-oculto" id="seccion-resultado2">
-                <img src="ImagenesdeChallenge/seguridadPhotoo.png" alt="Imagen" id="imagen-resultado2">
-                <h2 class="texto">Resultado</h2>
-                <h3>Presione el botón para copiar el resultado</h3>
-                <p></p>
-                <button id="copyButton" style="display: none;">Copiar</button>
+            <div id="resultado2" style="display: none;">
+                <div class="imagen-texto texto-oculto" id="seccion-resultado2">
+                    <img src="ImagenesdeChallenge/seguridadPhotoo.png" alt="Imagen" id="imagen-resultado2">
+                    <h2 class="texto">Resultado</h2>
+                    <h3>Presione el botón para copiar el resultado</h3>
+                    <p></p>
+                    <button id="copyButton" style="display: none;">Copiar</button>
+                </div>
             </div>
+        </main>
+    </body>
+    <footer>
+        <div class="iconosFooter">
+            <img src="ImagenesdeChallenge/icongithub.png" class="icongithub">
+            <img src="ImagenesdeChallenge/iconlinkedin.png" class="iconlinkedin">
+            <img src="ImagenesdeChallenge/iconinsta.png" class="iconinsta">
         </div>
-    </main>
-</body>
-<footer>
-    <div class="iconosFooter">
-        <img src="ImagenesdeChallenge/icongithub.png" class="icongithub">
-        <img src="ImagenesdeChallenge/iconlinkedin.png" class="iconlinkedin">
-        <img src="ImagenesdeChallenge/iconinsta.png" class="iconinsta">
-    </div>
-    <img src="ImagenesdeChallenge/separador.png" class="separador">
-    <p class="copy">&copy Copyright Marko Morante Velasquez - 2023</p>
-</footer>
+        <img src="ImagenesdeChallenge/separador.png" class="separador">
+        <p class="copy">&copy Copyright Marko Morante Velasquez - 2023</p>
+    </footer>
 
 </html>
 
@@ -147,16 +147,17 @@
     });
 
     document.querySelector(".icongithub").addEventListener("click", function () {
-        window.location.href = "https://github.com/Markmv17";
+        window.open("https://github.com/Markmv17", "_blank");
     });
 
     document.querySelector(".iconlinkedin").addEventListener("click", function () {
-        window.location.href = "https://www.linkedin.com/in/marko-morante-velasquez-ba8425243/";
+        window.open("https://www.linkedin.com/in/marko-morante-velasquez-ba8425243/", "_blank");
     });
 
     document.querySelector(".iconinsta").addEventListener("click", function () {
-        window.location.href = "https://www.instagram.com/markmv19/";
+        window.open("https://www.instagram.com/markmv19/", "_blank");
     });
+
 
 
 

@@ -172,10 +172,14 @@ main {
 #resultado p {
     margin-left: 28px;
     width: 80%;
+    height: 420px;
     text-align: left;
     font-size: 20px;
     margin-top: 20px;
-}
+    overflow-y: auto; 
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+} 
 
 #resultado h3 {
     margin-top: 15px;
@@ -205,7 +209,7 @@ footer{
     background-color: #837367 ;
     position: absolute;
     width: 100%;
-    bottom: -40%;
+    bottom: -50%;
 }
 
 .iconosFooter{
